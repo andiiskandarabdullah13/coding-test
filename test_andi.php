@@ -1,13 +1,24 @@
 <html>
 <head>
     <title>Test Online Hier Digital Soal 1</title>
+    <style>
+        .nav{
+            width:250pt;
+            height:auto;
+            padding:20px;
+            background-color:#2E8B57;
+            border-radius:10px;
+        }
+    </style>
 </head>
-<body align="center">
+<body>
     <h2>Huruf Duplikat</h2>
     <form action="" method="POST">
-        Input :
-        <input type="text" name="input">
-        <input type="submit" value="Proses">
+        <div class="nav">
+            Input :
+            <input type="text" name="input">
+            <input type="submit" value="Proses">
+        </div>
     </form>
     <?php
         if(isset($_POST['input'])){
@@ -28,7 +39,7 @@
                     break;
                 }
             }
-            echo "Output : ".$output; 
+            echo "<div class='nav'>Output : <input type='text' value='".$output."'></div>"; 
         }
     ?>
 </body>

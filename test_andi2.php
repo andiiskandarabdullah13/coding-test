@@ -1,13 +1,24 @@
 <html>
 <head>
     <title>Test Online Hier Digital Soal 2</title>
+    <style>
+        .nav{
+            width:300pt;
+            height:auto;
+            padding:20px;
+            background-color:#00CED1;
+            border-radius:10px;
+        }
+    </style>
 </head>
-<body align="center">
+<body>
     <h2>Buble Sort</h2>
     <form action="" method="POST">
+    <div class="nav">
         Input Number :
         <input type="text" name="input" placeholder="Gunakan spasi">
         <input type="submit" value="Proses">
+    
     </form>
     <?php 
         if(isset($_POST['input'])){
@@ -22,13 +33,16 @@
                     }
                 }
             }
-            echo "Output : ";
+            echo "<br>
+            <br> Output : ";
             for($a=0; $a<count($output); $a++){
                 echo $output[$a]." ";
             }
         }else{
-            echo "Output : Empty";
+            echo "<br>
+            <br> Output : Empty";
         }
     ?>
+    </div>
 </body>
 </html>
